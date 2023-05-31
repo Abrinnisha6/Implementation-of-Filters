@@ -1,63 +1,42 @@
 # Implementation-of-Filters
 
-## Aim:
+## Aim :
 
 To implement filters for smoothing and sharpening the images in the spatial domain.
 
-## Software Required:
+## Software Required :
 
 Anaconda - Python 3.7
 
-## Algorithm:
+## Algorithm :
 
-## Step 1:
+### Step 1 :
 
-Import the necessary modules.
+Import All The Necessary Modules.
 
-## Step 2:
+### Step 2 :
 
-For performing smoothing operation on a image.
+Using Averaging Filter Smoothen the given image.
 
-• Average filter
+### Step 3 :
 
-```
-kernel=np.ones((11,11),np.float32)/121
-image3=cv2.filter2D(image2,-1,kernel)
-```
+Using the Weighted Averaging Filter Smoothen the given Image.
 
-• Weighted average filter
+### Step 4 :
 
-```
-kernel1=np.array([[1,2,1],[2,4,2],[1,2,1]])/16
-image3=cv2.filter2D(image2,-1,kernel1)
-``` 
+Using the Gaussian Filter Smoothen the given Image.
 
-• Gaussian Blur
+### Step 5 :
 
-```
-gaussian_blur=cv2.GaussianBlur(image2,(33,33),0,0)
-Median filter
-median=cv2.medianBlur(image2,13)
-```
+Using the Median Filter Smoothen the given Image.
 
-## Step 3:
+### Step 6 :
 
-For performing sharpening on a image.
+Using the Laplacian Kernel Filter Sharpen the given Image.
 
-• Laplacian Kernel
-```
-kernel2=np.array([[-1,-1,-1],[2,-2,1],[2,1,-1]])
-image3=cv2.filter2D(image2,-1,kernel2)
-``` 
-• Laplacian Operator
-```
-laplacian=cv2.Laplacian(image2,cv2.CV_64F)
-```
+### Step 7 :
 
-## Step 4:
-
-Display all the images with their respective filters.
-
+Using the Laplacian Operator Filter Sharpen the given Image.
 
 ## Program:
 
